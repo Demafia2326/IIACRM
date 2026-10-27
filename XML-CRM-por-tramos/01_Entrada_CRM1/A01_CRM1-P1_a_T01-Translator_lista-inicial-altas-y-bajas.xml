@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT A01: P1 -> T01. XML inicial de CRM1. Contiene dos filas de Pepe por sus dos direcciones y una baja de Ana. -->
+<crm1Changes id="F001">
+  <row change="M01" seq="1" action="ALTA" key="CLI-25" clientId="25" name="Pepe">
+    <address id="D1">Casa</address>
+  </row>
+  <row change="M01" seq="1" action="ALTA" key="CLI-25" clientId="25" name="Pepe">
+    <address id="D2">Oficina</address>
+  </row>
+  <row change="M02" seq="2" action="BAJA" key="CLI-90" clientId="90" name="Ana">
+    <address id="D8">Taller</address>
+  </row>
+</crm1Changes>

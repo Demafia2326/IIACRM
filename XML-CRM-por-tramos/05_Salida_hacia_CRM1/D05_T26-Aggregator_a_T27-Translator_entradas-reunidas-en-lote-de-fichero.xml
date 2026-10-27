@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT D05: T26 -> T27. T26 reúne todas las direcciones del mismo evento dentro de fileBatch. El ejemplo incluye las dos entradas. -->
+<fileBatch id="ENVIO-CRM1-001">
+  <entry eventId="CRM2:C77:CLI-25:ALTA" token="RES-001" sequence="1" total="2" operation="ALTA" key="CLI-25" clientId="" name="Pepe">
+    <address id="D1">Casa</address>
+  </entry>
+  <entry eventId="CRM2:C77:CLI-25:ALTA" token="RES-001" sequence="2" total="2" operation="ALTA" key="CLI-25" clientId="" name="Pepe">
+    <address id="D2">Oficina</address>
+  </entry>
+</fileBatch>

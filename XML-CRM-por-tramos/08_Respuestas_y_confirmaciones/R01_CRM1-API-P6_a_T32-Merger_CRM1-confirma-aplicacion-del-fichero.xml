@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT R01: P6 -> T32. P6 devuelve la confirmación de aplicación en CRM1. Corresponde al ejemplo alternativo procedente de CRM2. -->
+<deliveryResult target="CRM1" correlationId="ACK-001">
+  <delivery eventId="CRM2:C77:CLI-25:ALTA" token="RES-001" status="CONFIRMED" localId="25"/>
+</deliveryResult>

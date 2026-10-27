@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT A02: T01 -> T02. T01 traduce al formato común y agrupa las direcciones del mismo cambio. El lote contiene dos eventos: alta de Pepe y baja de Ana. -->
+<batch id="F001" source="CRM1">
+  <event>
+    <header>
+      <eventId>CRM1:F001:M01:CLI-25:ALTA</eventId>
+      <source>CRM1</source>
+      <batchId>F001</batchId>
+      <sequence>1</sequence>
+      <total>2</total>
+      <sourceSequence>1</sourceSequence>
+      <operation>ALTA</operation>
+    </header>
+    <customer key="CLI-25" sourceId="25">
+      <name>Pepe</name>
+      <addresses>
+        <address id="D1">Casa</address>
+        <address id="D2">Oficina</address>
+      </addresses>
+    </customer>
+  </event>
+  <event>
+    <header>
+      <eventId>CRM1:F001:M02:CLI-90:BAJA</eventId>
+      <source>CRM1</source>
+      <batchId>F001</batchId>
+      <sequence>2</sequence>
+      <total>2</total>
+      <sourceSequence>2</sourceSequence>
+      <operation>BAJA</operation>
+    </header>
+    <customer key="CLI-90" sourceId="90">
+      <name>Ana</name>
+      <addresses>
+        <address id="D8">Taller</address>
+      </addresses>
+    </customer>
+  </event>
+</batch>

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT R03: P8 -> T32. P8 devuelve la confirmación de CRM3 y su identificador local del cliente. -->
+<deliveryResult target="CRM3" correlationId="ACK-001">
+  <delivery eventId="CRM1:F001:M01:CLI-25:ALTA" token="RES-001" status="CONFIRMED" localId="12"/>
+</deliveryResult>

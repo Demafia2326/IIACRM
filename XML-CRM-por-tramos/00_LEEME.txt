@@ -1,0 +1,69 @@
+XML DEL FLUJO DE INTEGRACION CRM, ORGANIZADOS POR TRAMOS
+======================================================
+
+Abre 00_INDICE.html para recorrer los ficheros con una explicación de cada paso.
+
+Qué contienen:
+- Un ejemplo XML completo por slot del modelo anterior: 50 ficheros.
+- Las listas iniciales son A01, B01 y C01.
+- Los nombres indican el slot, el emisor, el receptor y el estado del mensaje.
+- Dentro de cada XML hay un comentario que explica el tramo.
+
+Cómo leer un nombre:
+A02_T01-Translator_a_T02-Splitter_clientes-con-direcciones-agrupadas.xml
+Significa: salida del traductor T01 y entrada del splitter T02, en el slot A02.
+
+RECORRIDO PRINCIPAL, DESDE CRM1
+----------------------------
+A01: lista inicial, una fila por dirección.
+A02: lote canónico, direcciones agrupadas por cliente y cambio.
+A03: un cliente separado del lote.
+A04 y S01: el mismo XML después de ordenar y unir los canales.
+S02: se añaden el ID de correlación y el hash.
+S03/S04: dos copias, una retenida y otra para consultar.
+S05: petición de consulta a la BD auxiliar.
+S06: respuesta con IDs locales y destinos pendientes.
+S07: original y respuesta emparejados.
+S08: cliente enriquecido con el estado y la decisión.
+S09/S10/S11: enrutado y copias sin modificar el contenido.
+S12: petición de reserva de entregas pendientes.
+S13: respuesta de la reserva.
+S14: cliente y respuesta de reserva emparejados.
+S15: cliente con el token de reserva añadido.
+S16: pasa a distribución porque ok=true.
+E01/E02/E03: copia, filtro y llamada RPC final a CRM2.
+F01/F02/F03: copia, filtro y operación SQL final a CRM3.
+R02/R03/R04/R05/R06: confirmaciones de los destinos y registro en BD auxiliar.
+
+OTRO EJEMPLO PARA PODER MOSTRAR LA SALIDA A CRM1
+---------------------------------------------
+B01 a B04 muestran la entrada procedente de CRM2.
+D01 a D06 y R01 continúan una ejecución con origen CRM2.
+D01/D02: cliente preparado y aceptado para enviarlo a CRM1.
+D03: lista de entradas con una por dirección.
+D04: una sola entrada después del splitter.
+D05: entradas reunidas en un lote completo de fichero.
+D06: fichero final para CRM1.
+R01: respuesta de CRM1 tras aplicar el fichero.
+
+No hay un único cliente que visite todas las salidas a la vez: el filtro evita
+devolver el cambio al CRM del que salió. Por eso se muestran ejecuciones
+alternativas para cubrir todos los tramos del dibujo.
+
+LO QUE CONVIENE RECORDAR
+-----------------------
+1. Translator y Content Enricher cambian el formato o añaden información.
+2. Splitter separa mensajes. Aggregator reúne mensajes relacionados.
+3. Replicator crea copias. Filter y Distributor eligen rutas.
+4. Merger reúne canales; no fusiona el contenido de sus mensajes.
+5. Resequencer ordena mensajes; no cambia su XML. Por eso algunos ficheros
+   tienen el mismo contenido aunque representen tramos diferentes.
+6. La BD auxiliar conserva estado de la integración. Es distinta de la BD
+   de CRM3. SQL y RPC viajan aquí representados mediante contratos XML.
+7. Los formatos nativos son ejemplos propuestos porque el enunciado no
+   aporta los esquemas reales. CRM2 solo permite consultar altas según
+   el enunciado. No se ha inventado una consulta de bajas disponible.
+8. A01/A02 tienen dos cambios para mostrar un lote. Después del splitter
+   basta con un ejemplo de uno de esos mensajes, como has solicitado.
+
+Los ejemplos y los códigos de tarea/slot coinciden con la entrega Marp previa.

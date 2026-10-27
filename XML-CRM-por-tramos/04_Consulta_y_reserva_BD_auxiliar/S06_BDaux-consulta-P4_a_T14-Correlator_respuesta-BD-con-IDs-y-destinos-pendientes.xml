@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT S06: P4 -> T14. P4 devuelve el estado consultado en la BD auxiliar. No es la BD de CRM3. Incluye decisión, IDs locales y destinos pendientes. -->
+<lookupResult correlationId="INTENTO-001" decision="APPLY">
+  <targets>
+    <target system="CRM1" pending="false" id="25">
+      <addresses>
+        <address id="D1">Casa</address>
+        <address id="D2">Oficina</address>
+      </addresses>
+    </target>
+    <target system="CRM2" pending="true" id=""/>
+    <target system="CRM3" pending="true" id=""/>
+  </targets>
+</lookupResult>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT D02: T23 -> T24. T23 acepta la copia porque el origen es CRM2 y CRM1 está pendiente. No transforma el XML. -->
+<event>
+  <header>
+    <eventId>CRM2:C77:CLI-25:ALTA</eventId>
+    <source>CRM2</source>
+    <batchId>R001</batchId>
+    <sequence>1</sequence>
+    <total>1</total>
+    <sourceSequence>1</sourceSequence>
+    <operation>ALTA</operation>
+    <correlationId>INTENTO-002</correlationId>
+    <payloadHash>623aec9958bf5f662e517a138a07af1de5eabf8ce5f5497a4f750f80994dc9d5</payloadHash>
+  </header>
+  <customer key="CLI-25" sourceId="88">
+    <name>Pepe</name>
+    <addresses>
+      <address id="D1">Casa</address>
+      <address id="D2">Oficina</address>
+    </addresses>
+  </customer>
+  <state>
+    <targets>
+      <target system="CRM1" pending="true" id="">
+        <addresses>
+          <address id="D1">Casa</address>
+          <address id="D2">Oficina</address>
+        </addresses>
+      </target>
+      <target system="CRM2" pending="false" id="88"/>
+      <target system="CRM3" pending="true" id=""/>
+    </targets>
+  </state>
+  <decision action="APPLY"/>
+  <reservation ok="true" token="RES-001"/>
+</event>

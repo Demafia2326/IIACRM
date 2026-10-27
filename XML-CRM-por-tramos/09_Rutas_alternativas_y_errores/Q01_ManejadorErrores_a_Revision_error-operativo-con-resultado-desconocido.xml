@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT Q01: HANDLER -> REVIEW. Ejemplo de error del manejador operativo. Un timeout no demuestra que el alta remota no se haya aplicado. -->
+<error stage="P7" eventId="CRM1:F001:M01:CLI-25:ALTA" retryable="true">
+  <reason>Timeout: resultado desconocido</reason>
+</error>

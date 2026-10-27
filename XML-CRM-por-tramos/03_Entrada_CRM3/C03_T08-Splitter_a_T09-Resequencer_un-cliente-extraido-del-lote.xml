@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT C03: T08 -> T09. T08 extrae un evento del lote de CRM3. -->
+<event>
+  <header>
+    <eventId>CRM3:D99:CLI-25:ALTA</eventId>
+    <source>CRM3</source>
+    <batchId>D001</batchId>
+    <sequence>1</sequence>
+    <total>1</total>
+    <sourceSequence>1</sourceSequence>
+    <operation>ALTA</operation>
+  </header>
+  <customer key="CLI-25" sourceId="12">
+    <name>Pepe</name>
+    <addresses>
+      <address id="D1">Casa</address>
+      <address id="D2">Oficina</address>
+    </addresses>
+  </customer>
+</event>

@@ -1,0 +1,3 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT S13: P5 -> T19. P5 confirma que la reserva se guardó. Devuelve ok=true y un token. No confirma que los CRM hayan aplicado el cambio. -->
+<reserveResult correlationId="INTENTO-001" ok="true" token="RES-001"/>

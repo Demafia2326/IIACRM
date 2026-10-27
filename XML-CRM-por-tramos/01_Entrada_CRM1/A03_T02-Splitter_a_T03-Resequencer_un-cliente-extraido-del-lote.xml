@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT A03: T02 -> T03. T02 separa los eventos. Se muestra solo uno de ellos: Pepe con sus dos direcciones. -->
+<event>
+  <header>
+    <eventId>CRM1:F001:M01:CLI-25:ALTA</eventId>
+    <source>CRM1</source>
+    <batchId>F001</batchId>
+    <sequence>1</sequence>
+    <total>2</total>
+    <sourceSequence>1</sourceSequence>
+    <operation>ALTA</operation>
+  </header>
+  <customer key="CLI-25" sourceId="25">
+    <name>Pepe</name>
+    <addresses>
+      <address id="D1">Casa</address>
+      <address id="D2">Oficina</address>
+    </addresses>
+  </customer>
+</event>

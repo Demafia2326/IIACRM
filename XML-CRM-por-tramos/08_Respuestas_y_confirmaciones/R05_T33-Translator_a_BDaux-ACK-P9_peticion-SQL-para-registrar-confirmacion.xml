@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT R05: T33 -> P9. T33 traduce el ACK a confirmDeliveries. Solo confirma CRM2, el destino de la respuesta recibida. -->
+<sqlRequest operation="confirmDeliveries" correlationId="ACK-001">
+  <delivery eventId="CRM1:F001:M01:CLI-25:ALTA" target="CRM2" token="RES-001" status="CONFIRMED" localId="88"/>
+</sqlRequest>

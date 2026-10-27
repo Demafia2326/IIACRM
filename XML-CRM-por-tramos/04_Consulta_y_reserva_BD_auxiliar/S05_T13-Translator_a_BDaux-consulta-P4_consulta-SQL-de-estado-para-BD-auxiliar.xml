@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT S05: T13 -> P4. T13 transforma el evento en una petición parametrizada lookupChange. No es todavía una consulta SQL ejecutada. -->
+<sqlRequest operation="lookupChange" correlationId="INTENTO-001">
+  <param name="eventId">CRM1:F001:M01:CLI-25:ALTA</param>
+  <param name="businessKey">CLI-25</param>
+  <param name="origin">CRM1</param>
+  <param name="operation">ALTA</param>
+  <param name="payloadHash">623aec9958bf5f662e517a138a07af1de5eabf8ce5f5497a4f750f80994dc9d5</param>
+</sqlRequest>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT S15: T20 -> T21. T20 añade reservation, con ok y token, al evento que ya contenía estado y decisión. -->
+<event>
+  <header>
+    <eventId>CRM1:F001:M01:CLI-25:ALTA</eventId>
+    <source>CRM1</source>
+    <batchId>F001</batchId>
+    <sequence>1</sequence>
+    <total>2</total>
+    <sourceSequence>1</sourceSequence>
+    <operation>ALTA</operation>
+    <correlationId>INTENTO-001</correlationId>
+    <payloadHash>623aec9958bf5f662e517a138a07af1de5eabf8ce5f5497a4f750f80994dc9d5</payloadHash>
+  </header>
+  <customer key="CLI-25" sourceId="25">
+    <name>Pepe</name>
+    <addresses>
+      <address id="D1">Casa</address>
+      <address id="D2">Oficina</address>
+    </addresses>
+  </customer>
+  <state>
+    <targets>
+      <target system="CRM1" pending="false" id="25">
+        <addresses>
+          <address id="D1">Casa</address>
+          <address id="D2">Oficina</address>
+        </addresses>
+      </target>
+      <target system="CRM2" pending="true" id=""/>
+      <target system="CRM3" pending="true" id=""/>
+    </targets>
+  </state>
+  <decision action="APPLY"/>
+  <reservation ok="true" token="RES-001"/>
+</event>

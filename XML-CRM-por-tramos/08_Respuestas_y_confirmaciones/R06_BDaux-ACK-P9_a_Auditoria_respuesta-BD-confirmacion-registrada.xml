@@ -1,0 +1,3 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT R06: P9 -> AUDIT. P9 informa de que el resultado de CRM2 quedó registrado en la BD auxiliar. -->
+<confirmResult ok="true" eventId="CRM1:F001:M01:CLI-25:ALTA" target="CRM2"/>

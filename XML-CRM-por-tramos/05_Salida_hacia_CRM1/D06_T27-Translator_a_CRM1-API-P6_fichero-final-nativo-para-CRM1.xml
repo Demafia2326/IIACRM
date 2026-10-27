@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT D06: T27 -> P6. T27 traduce el lote al formato de fichero que carga P6 en CRM1. Hay una fila por dirección. -->
+<crm1Changes id="ENVIO-CRM1-001">
+  <row change="CRM2:C77:CLI-25:ALTA" seq="1" action="ALTA" key="CLI-25" clientId="" name="Pepe">
+    <address id="D1">Casa</address>
+  </row>
+  <row change="CRM2:C77:CLI-25:ALTA" seq="2" action="ALTA" key="CLI-25" clientId="" name="Pepe">
+    <address id="D2">Oficina</address>
+  </row>
+</crm1Changes>

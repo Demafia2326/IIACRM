@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT R04: T32 -> T33. T32 une los canales de respuestas sin mezclar sus cuerpos. Se muestra la respuesta de CRM2. -->
+<deliveryResult target="CRM2" correlationId="ACK-001">
+  <delivery eventId="CRM1:F001:M01:CLI-25:ALTA" token="RES-001" status="CONFIRMED" localId="88"/>
+</deliveryResult>

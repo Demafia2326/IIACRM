@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT B01: P2 -> T04. XML inicial de CRM2: respuesta a la consulta de altas desde fecha. El enunciado no proporciona consulta de bajas. -->
+<rpcResult batch="R001" nextCursor="2026-10-27T09:00:00+01:00">
+  <client changeId="C77" seq="1" id="88" key="CLI-25">
+    <name>Pepe</name>
+    <registeredAt>2026-10-27T08:30:00+01:00</registeredAt>
+    <addresses>
+      <address id="D1">Casa</address>
+      <address id="D2">Oficina</address>
+    </addresses>
+  </client>
+</rpcResult>

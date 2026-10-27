@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT C01: P3 -> T07. XML producido por el adaptador de CRM3 tras detectar diferencias en sus datos. Es un contrato de ejemplo. -->
+<dbChanges batch="D001">
+  <change id="D99" seq="1" action="ALTA" key="CLI-25" localId="12">
+    <name>Pepe</name>
+    <addresses>
+      <address id="D1">Casa</address>
+      <address id="D2">Oficina</address>
+    </addresses>
+  </change>
+</dbChanges>

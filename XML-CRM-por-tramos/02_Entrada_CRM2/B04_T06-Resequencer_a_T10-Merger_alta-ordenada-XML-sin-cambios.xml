@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SLOT B04: T06 -> T10. T06 ordena el lote de CRM2 sin modificar este mensaje. -->
+<event>
+  <header>
+    <eventId>CRM2:C77:CLI-25:ALTA</eventId>
+    <source>CRM2</source>
+    <batchId>R001</batchId>
+    <sequence>1</sequence>
+    <total>1</total>
+    <sourceSequence>1</sourceSequence>
+    <operation>ALTA</operation>
+  </header>
+  <customer key="CLI-25" sourceId="88">
+    <name>Pepe</name>
+    <addresses>
+      <address id="D1">Casa</address>
+      <address id="D2">Oficina</address>
+    </addresses>
+  </customer>
+</event>
